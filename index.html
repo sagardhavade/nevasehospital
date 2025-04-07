@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+     <!-- Global CSS Links -->
+     <link rel="stylesheet" type="text/css" href="/css/animate.css">
+     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+     <link rel="stylesheet" type="text/css" href="/css/owl.carousel.css">
+     <link rel="stylesheet" type="text/css" href="/css/magnific-popup.css">
+     <link rel="stylesheet" type="text/css" href="/css/owl.theme.default.css">
+     <link rel="stylesheet" type="text/css" href="/css/flaticon.css">
+     <link rel="stylesheet" type="text/css" href="/css/fonts.css">
+     <link rel="stylesheet" type="text/css" href="/css/style.css">
+     <link rel="stylesheet" type="text/css" href="/css/responsive.css">
+ 
+     <!-- Favicon -->
+     <link rel="shortcut icon" type="image/icon" href="/images/Iconpic.png" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+     <!--main js files-->
+     <script src="js/jquery-3.3.1.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.countTo.js"></script>
+     <script src="js/jquery.inview.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/owl.carousel.js"></script>
+     <script src="js/jquery.magnific-popup.js"></script>
+     <script src="js/custom.js"></script>
+     <!--js code-->
+     <script>
+         function initMap() {
+             var uluru = {
+                 lat: -36.742775,
+                 lng: 174.731559
+             };
+             var map = new google.maps.Map(document.getElementById('map'), {
+                 zoom: 15,
+                 scrollwheel: false,
+                 center: uluru
+             });
+             var marker = new google.maps.Marker({
+                 position: uluru,
+                 map: map
+             });
+         }
+     </script>
+       <script>
+        $(document).ready(function(){
+          $(".owl-carousel").owlCarousel({
+            items: 1, // adjust to how many items you want to show
+            loop: true,
+            
+            nav: true,
+            navText: [
+              " <i class='fa fa-angle-right'></i>", 
+              " <i class='fa fa-angle-left'></i>", 
+            ],
+      autoplay: true,
+      autoplayTimeout: 3000, // 1 second = 1000 milliseconds
+    //   autoplayHoverPause: true // pauses on hover (optional)
+          });
+        });
+      </script>
+     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBctr8WYTfFDi_oGbPEolSDzn4VZaAKVK0&callback=initMap">
+     </script>
+     <!-- map Script-->
+  </body>
+</html>

@@ -1,0 +1,110 @@
+/*********---------vedio wrapper---------***********/
+
+.vedio_wrapper {
+	background: url('../images/vedio.jpg') 50% 0 repeat-y;
+	float: left;
+	width: 100%;
+	height: 100%;
+	background-position: center 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.vedio_overlay {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	bottom: 0%;
+	background: rgba(9, 9, 9, 0.9);
+}
+.vedio_heading_wrapper {
+	float: left;
+	text-align: center;
+	width: 100%;
+	margin-top: 200px;
+	margin-bottom: 195px;
+}
+.vedio_heading_wrapper h1 {
+	margin: 0px 0px 0px 0px;
+	color: white;
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.vedio_heading_wrapper p {
+	margin: 0px 0px 0px 0px;
+	color: white;
+	font-size: 40px;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+.vedio_heading_wrapper h4 {
+	margin-top: 40px;
+	display: inline-block;
+	margin-left: -160px;
+}
+.vedio_heading_wrapper h4 a {
+	font-size: 18px;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.vedio_heading_wrapper h4 img {
+	margin-right: 10px;
+}
+.vedio_heading_wrapper h4 a:hover {
+	color: #f4ab01;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.video_btn_wrapper {
+	float: right;
+	width: 100%;
+	display: inline-block;
+	margin-right: 35%;
+}
+.video_btn_wrapper ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.video_btn_wrapper li a {
+	width: 150px;
+	height: 50px;
+	float: right;
+	background: #2ec8a6;
+	color: white;
+	text-align: center;
+	line-height: 35px;
+	border-radius: 50px;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-left: 30px;
+	margin-top: 7px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	border: 2px solid #2ec8a6;
+	margin-top: -60px;
+}
+.video_btn_wrapper li a:hover {
+	background: transparent;
+	border: 2px solid #2ec8a6;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	color: white;
+}
