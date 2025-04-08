@@ -125,7 +125,7 @@ const Header = () => {
                             <div className="row">
                                 <div className="col-xl-6">
                                     <div className="gc_logo logo_hidn d-block d-sm-block d-md-none d-lg-none d-xl-none">
-                                        <a href="#"><img src="/images/logo/NCLOGO.png" width={180} height={56} className="img-responsive" alt="logo" /></a>
+                                        <a href="#"><img src="/images/logo/NCLOGO.png" width={100} height={50} className="img-responsive" alt="logo" /></a>
                                     </div>
                                 </div>
                                 <div className="col-xl-6 d-block d-sm-block d-md-none d-lg-none d-xl-none">

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/VideoWrapper.css'; // Ensure the path is correct
+import '../styles/VideoWrapper.css'
 
 const VideoWrapper = () => {
     return (
