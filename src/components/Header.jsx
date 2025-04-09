@@ -1,7 +1,7 @@
 // src/components/Header.jsx
 import React, { useEffect, useState } from 'react';
 // import './Header.css'; // Import any specific styles for the header
-
+import { Link } from 'react-router-dom';
 const Header = () => {
     const [loading, setLoading] = useState(true);
 
@@ -71,18 +71,26 @@ const Header = () => {
                                 <div className="mainmenu d-xl-block d-lg-block d-md-block d-sm-none d-none mb-4">
                                     <ul className="main_nav_ul">
                                         <li className="has-mega gc_main_navigation">
-                                            <a href="index_clinic.html" className="gc_main_navigation hover_color">Home&nbsp;</a>
+                                            {/* <a href="index_clinic.html" className="gc_main_navigation hover_color">Home&nbsp;</a> */}
+                                            <Link to="/" className="gc_main_navigation hover_color">Home&nbsp;</Link>
                                         </li>
                                         <li className="has-mega gc_main_navigation">
-                                            <a href="about_us.html" className="gc_main_navigation hover_color">About Us&nbsp;</a>
+                                            {/* <a href="" className="gc_main_navigation hover_color">About Us&nbsp;</a> */}
+                                            <Link to="/about" className="gc_main_navigation hover_color">About Us&nbsp;</Link>
                                         </li>
                                         <li className="has-mega gc_main_navigation">
-                                            <a href="#" className="gc_main_navigation hover_color">Services&nbsp;</a>
+                                            {/* <a href="#" className="gc_main_navigation hover_color">Services&nbsp;</a> */}
+                                            <Link to="/services" className="gc_main_navigation hover_color">Services&nbsp;</Link>
                                             <ul>
-                                                <li className="parent"><a href="services.html">Services</a>
+                                                <li className="parent">
+                                                    {/* <a href="services.html">Services</a> */}
+                                                <Link to="/services" >Services</Link>
                                                 </li>
-                                                <li className="parent"><a href="event.html">Events</a></li>
-                                                <li className="parent"><a href="pricing.html">Pricing</a></li>
+                                                {/* <li className="parent"><a href="event.html">Events</a></li> */}
+                                                <li className="parent">
+                                                    {/* <a href="pricing.html">Pricing</a> */}
+                                                    <Link to="/pricing" >Pricing</Link>
+                                                    </li>
                                             </ul>
                                         </li>
                                         <li className="has-mega gc_main_navigation">
@@ -150,27 +158,23 @@ const Header = () => {
                             <div id="toggle_close">&times;</div>
                             <div id='cssmenu' className="wd_single_index_menu">
                                 <ul>
-                                    <li><a href='#'>Home</a>
-                                        {/* <ul>
-                                            <li><a href="index_clinic.html">Index Clinic</a></li>
-                                            <li><a href="index_corona.html">Index Corona</a></li>
-                                            <li><a href="index_hospital.html">Index Hospital</a></li>
-                                            <li><a href="index_gynecologycal.html">Index Gynecologycal</a></li>
-                                            <li><a href="index_dental.html">Index Dental</a></li>
-                                            <li><a href="index_eye.html">Index Eye</a></li>
-                                            <li><a href="index_ent.html">Index Ent</a></li>
-                                            <li><a href="index_orthopaedics.html">Index Orthopaedics</a></li>
-                                            <li><a href="index_neurology.html">Index Neurology</a></li>
-                                            <li><a href="index_laparoscopic.html">Index Laparoscopic</a></li>
-                                            <li><a href="index_cardiology.html">Index Cardiology</a></li>
-                                            <li><a href="index_bariatric.html">Index Bariatric</a></li>
-                                        </ul> */}
+                                    <li>
+                                        {/* <a href='#'>Home</a> */}
+                                        <Link to="/" >Home</Link>
                                     </li>
-                                    <li><a href="about_us.html">About Us</a></li>
-                                    <li className='has-sub'><a href='#'>Services</a>
+                                    <li>
+                                        {/* <a href="about_us.html">About Us</a> */}
+                                        <Link to="/about" >About Us</Link>
+                                        </li>
+                                    <li className='has-sub'>
+                                        {/* <a href='#'>Services</a> */}
+                                        <Link to="/services" >Services</Link>
                                         <ul>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="event.html">Events</a></li>
+                                            <li>
+                                                {/* <a href="services.html">Services</a> */}
+                                                <Link to="/services" >Services</Link>
+                                                </li>
+                                            {/* <li><a href="event.html">Events</a></li> */}
                                             <li><a href="pricing.html">Pricing</a></li>
                                         </ul>
                                     </li>
