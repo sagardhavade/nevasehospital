@@ -94,33 +94,51 @@ const Header = () => {
                                             </ul>
                                         </li>
                                         <li className="has-mega gc_main_navigation">
-                                            <a href="#" className="gc_main_navigation hover_color">Doctors&nbsp;</a>
+                                            {/* <a href="#" className="gc_main_navigation hover_color">Doctors&nbsp;</a> */}
+                                            <Link to="/doctors" className="gc_main_navigation hover_color">Doctor</Link>
                                             <ul>
-                                                <li className="parent"><a href="doctor.html">Doctor Single</a></li>
-                                                <li className="parent"><a href="our_doctors.html">Our Doctors</a></li>
+                                                {/* <li className="parent"><a href="doctor.html">Doctor Single</a></li> */}
+                                                {/* <li className="parent"><a href="our_doctors.html">Our Doctors</a></li> */}
+                                                <li className="parent">
+                                                    {/* <a href="our_doctors.html">Our Doctors</a> */}
+                                                    <Link to="/doctors" >Our Doctors</Link> 
+                                                    </li>
+
                                             </ul>
                                         </li>
                                         <li className="has-mega gc_main_navigation">
-                                            <a href="#" className="gc_main_navigation hover_color">Gallery&nbsp;</a>
+                                            {/* <a href="#" className="gc_main_navigation hover_color">Gallery&nbsp;</a> */}
+                                            <Link to="/gallary" className="gc_main_navigation hover_color" >Gallery&nbsp;</Link> 
                                             <ul>
-                                                <li className="parent"><a href="gallery_2.html">Gallery 2</a></li>
+                                                {/* <li className="parent"><a href="gallery_2.html">Gallery 2</a></li>
                                                 <li className="parent"><a href="gallery_3.html">Gallery 3</a></li>
-                                                <li className="parent"><a href="gallery_4.html">Gallery 4</a></li>
+                                                <li className="parent"><a href="gallery_4.html">Gallery 4</a></li> */}
+                                                <li className="parent"><Link to="/gallary">Gallery&nbsp;</Link> </li>
+                                                 
                                             </ul>
                                         </li>
-                                        <li className="has-mega gc_main_navigation">
+                                        {/* <li className="has-mega gc_main_navigation">
                                             <a href="#" className="gc_main_navigation hover_color">Blog&nbsp;</a>
                                             <ul>
                                                 <li className="parent"><a href="blog_category.html">Blog Category</a></li>
                                                 <li className="parent"><a href="blog_single.html">Blog Single</a></li>
                                             </ul>
-                                        </li>
+                                        </li> */}
                                         <li className="has-mega gc_main_navigation">
-                                            <a href="#" className="gc_main_navigation hover_color">Contact&nbsp;</a>
-                                            <ul>
+                                            {/* <a href="#" className="gc_main_navigation hover_color">Contact&nbsp;</a> */}
+                                           <Link to="/contact" className="gc_main_navigation hover_color">Contact&nbsp;</Link>
+                                                 
+                                            {/* <ul>
                                                 <li className="parent"><a href="contact_us.html">Contact Us</a></li>
                                                 <li className="parent"><a href="appointment.html">Appointment</a></li>
-                                            </ul>
+                                            </ul> */}
+                                        </li>
+                                        <li className="has-mega gc_main_navigation">
+                                            <a href="#" className="gc_main_navigation hover_color">Appointment&nbsp;</a>
+                                            {/* <ul>
+                                                <li className="parent"><a href="contact_us.html">Contact Us</a></li>
+                                                <li className="parent"><a href="appointment.html">Appointment</a></li>
+                                            </ul> */}
                                         </li>
                                     </ul>
                                 </div>
@@ -175,33 +193,51 @@ const Header = () => {
                                                 <Link to="/services" >Services</Link>
                                                 </li>
                                             {/* <li><a href="event.html">Events</a></li> */}
-                                            <li><a href="pricing.html">Pricing</a></li>
+                                            <li>
+                                                <Link to="/pricing" >Pricing</Link>
+                                                </li>
                                         </ul>
                                     </li>
-                                    <li className='has-sub'><a href='#'>Doctors</a>
+                                    <li className='has-sub'>
+                                        {/* <a href='#'>Doctors</a> */}
+                                        <Link to="/doctors" >Doctors</Link>
                                         <ul>
-                                            <li><a href="doctor.html">Doctor Single</a></li>
-                                            <li><a href="our_doctors.html">Our Doctors</a></li>
+                                            {/* <li><a href="doctor.html">Doctor Single</a></li> */}
+                                            <li>
+                                                {/* <a href="our_doctors.html">Our Doctors</a> */}
+                                                <Link to="/doctors" >Our Doctors</Link>
+                                                </li>
                                         </ul>
                                     </li>
-                                    <li className='has-sub'><a href='#'>Gallery</a>
-                                        <ul>
+                                    <li className='has-sub'>
+                                        {/* <a href='#'>Gallery</a> */}
+                                        <Link to="/gallary" >Gallery</Link>
+                                        {/* <ul>
                                             <li><a href="gallery_2.html">Gallery 2</a></li>
                                             <li><a href="gallery_3.html">Gallery 3</a></li>
                                             <li><a href="gallery_4.html">Gallery 4</a></li>
-                                        </ul>
+                                        </ul> */}
                                     </li>
-                                    <li className='has-sub'><a href='#'>Blog</a>
+                                    {/* <li className='has-sub'><a href='#'>Blog</a>
                                         <ul>
                                             <li><a href="blog_category.html">Blog Category</a></li>
                                             <li><a href="blog_single.html">Blog Single</a></li>
                                         </ul>
-                                    </li>
-                                    <li className='has-sub'><a href='#'>Contact</a>
+                                    </li> */}
+                                    <li className='has-sub'>
+                                        {/* <a href='#'>Contact</a> */}
+                                        <Link to="/contact" >Contact</Link>
                                         <ul>
-                                            <li><a href="contact_us.html">Contact Us</a></li>
-                                            <li><a href="appointment.html">Appointment</a></li>
+                                            <li>
+                                                {/* <a href="contact_us.html">Contact Us</a> */}
+                                                <Link to="/contact" >Contact</Link>
+                                                </li>
+                                            {/* <li><a href="appointment.html">Appointment</a></li> */}
                                         </ul>
+                                    </li>
+                                    <li className='has-sub'>
+                                        {/* <a href='#'>Appointment</a> */}
+                                        <Link to="/appointment" >Appointment</Link>
                                     </li>
                                     {/* <li><a href="login_register.html">Log In / Sign Up</a></li> */}
                                 </ul>

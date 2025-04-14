@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import AboutUs from "../components/About"; // Import the About Us component
 import Appointment from "../components/Appointment"; // Import the Appointment component
 import Team from "../components/Team"; // Import the Team component
@@ -9,10 +10,12 @@ import Slider from "../components/Slider"; // Import the Slider component
 import Header from "../components/Header";
 import NewsletterSection from "../components/NewsletterSection";
 const Home = () => {
+  const location = useLocation();
   return (
     <>
     {/* <Header /> */}
-      <Slider /> 
+      {/* <Slider />  */}
+      <Slider key={location.key} />
       <AboutUs /> 
       <Appointment /> {/* Use the Appointment component here */}
       <Team />

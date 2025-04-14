@@ -1,19 +1,24 @@
-// src/components/Slider.jsx
-import React from 'react';
+
+import React,{useEffect} from "react";
 const Slider = () => {
-    // useEffect(() => {
-    //     // Initialize Owl Carousel
-    //     const $ = window.$; // Use jQuery
-    //     $('.owl-carousel').owlCarousel({
-    //         items: 1,
-    //         loop: true,
-    //         autoplay: true,
-    //         autoplayTimeout: 5000,
-    //         autoplayHoverPause: true,
-    //         animateOut: 'fadeOut',
-    //         animateIn: 'fadeIn',
-    //     });
-    // }, []);
+
+    useEffect(() => {
+        // Initialize Owl Carousel
+        const $ = window.$; // Use jQuery
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            navText: [
+                        "<i class='fa fa-angle-right'></i>",
+                        "<i class='fa fa-angle-left'></i>",
+                      ],
+        });
+    }, []);
 
     return (
         <div className="slider_main_wrapper">

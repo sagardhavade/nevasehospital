@@ -11,6 +11,10 @@ import Slider from "./components/Slider";
 import About from "./pages/About";
 import Services from "./pages/Services"
 import Pricing from "./pages/Pricing";
+import Doctor from "./pages/Doctor";
+import Gallary from "./pages/Gallary";
+import ContactPage from "./pages/ContactPage";
+import ScrollToTop from "./components/ScrollToTop";
 // import PartnerSection from "./components/PartnerSection";
 
 function App() {
@@ -18,6 +22,7 @@ function App() {
 
   return (
     <Router>
+       <ScrollToTop />
       <Header />
       {/* <Slider /> */}
       <Routes>
@@ -25,6 +30,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/doctors" element={<Doctor />} />
+        <Route path="/gallary" element={ <Gallary />} />
+        <Route path="/contact" element = { <ContactPage />} />
       </Routes>
       <Footer />
     </Router>

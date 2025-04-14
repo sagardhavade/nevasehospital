@@ -1,7 +1,25 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 // import './TestimonialSection.css'; // Import your CSS file if needed
 
 const TestimonialSection = () => {
+    
+     useEffect(() => {
+            // Initialize Owl Carousel
+            const $ = window.$; // Use jQuery
+            $('.owl-carousel').owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                animateOut: 'fadeOut',
+                animateIn: 'fadeIn',
+                navText: [
+                            "<i class='fa fa-angle-right'></i>",
+                            "<i class='fa fa-angle-left'></i>",
+                          ],
+            });
+        }, []);
     return (
         <div className="testimonial_wrapper med_toppadder100">
             <div className="test_overlay"></div>
