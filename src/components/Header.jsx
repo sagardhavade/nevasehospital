@@ -227,13 +227,13 @@ const Header = () => {
                                     <li className='has-sub'>
                                         {/* <a href='#'>Contact</a> */}
                                         <Link to="/contact" >Contact</Link>
-                                        <ul>
+                                        {/* <ul>
                                             <li>
-                                                {/* <a href="contact_us.html">Contact Us</a> */}
+                                               
                                                 <Link to="/contact" >Contact</Link>
                                                 </li>
-                                            {/* <li><a href="appointment.html">Appointment</a></li> */}
-                                        </ul>
+                                          
+                                        </ul> */}
                                     </li>
                                     <li className='has-sub'>
                                         {/* <a href='#'>Appointment</a> */}
